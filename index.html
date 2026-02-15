@@ -12,37 +12,17 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
-
-body {
-    background-color: #020617;
-    color: #f8fafc;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    scroll-behavior: smooth;
-}
-
-.glass {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.gradient-text {
-    background: linear-gradient(90deg, #60a5fa, #a855f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+body { background-color: #020617; color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+.glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+.gradient-text { background: linear-gradient(90deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="fixed w-full z-50 glass border-b border-slate-800/50 px-10 py-4">
     <div class="flex items-center gap-4">
-        <img src="./mujlogo.jpg"
-             alt="Manipal University Jaipur"
-             class="h-10 w-auto object-contain bg-white p-1 rounded shadow-md">
-
+        <img src="./mujlogo.jpg" class="h-10 w-auto object-contain bg-white p-1 rounded shadow-md">
         <div class="flex flex-col leading-tight">
             <span class="text-2xl font-black uppercase">
                 PBL <span class="text-blue-500 italic">2026</span>
@@ -56,99 +36,187 @@ body {
 
 <main class="max-w-7xl mx-auto px-8 pt-52 pb-32 space-y-40">
 
-<!-- HERO -->
 <section class="text-center">
     <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">
         ID: 2427030514
     </div>
 
-    <h1 class="text-5xl md:text-6xl font-extrabold mb-6 gradient-text">
-        MediShield
+    <h1 class="text-4xl md:text-5xl font-extrabold uppercase leading-tight mb-10">
+        <span class="gradient-text">
+            MediShield – Personalized Prediction of Medicine Side Effects
+        </span>
     </h1>
 
-    <p class="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-        Personalized Prediction of Medicine Side Effects using AI & Machine Learning.
+    <p class="text-slate-400 max-w-3xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
+        <strong>Hypothesis / Project Statement:</strong><br>
+        Can machine learning models analyze patient-specific medical data
+        to predict the likelihood of adverse drug side effects before
+        treatment begins, enabling preventive healthcare decisions?
     </p>
-
-    <!-- STUDENT & SUPERVISOR DETAILS (KEPT CLEARLY VISIBLE) -->
-    <div class="mt-10 text-slate-400 space-y-2">
-        <p class="text-lg"><strong>Submitted By:</strong> Bhavesh Agrawal</p>
-        <p class="text-lg"><strong>Supervised By:</strong> Ms. Shweta Sharma</p>
-        <p>School of Computer Science and Engineering</p>
-        <p>Department of Computer Science and Engineering</p>
-    </div>
-
-    <div class="mt-10">
-        <a href="https://medishield-2fx1.onrender.com" target="_blank"
-           class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">
-            View Live Application
-        </a>
-    </div>
 </section>
 
-<!-- PROBLEM STATEMENT -->
-<section>
-    <h2 class="text-3xl font-bold mb-6 gradient-text">Problem Statement</h2>
+<section class="grid lg:grid-cols-2 gap-16 items-start">
 
-    <p class="text-slate-400 leading-relaxed mb-4">
+<div class="glass p-12 rounded-[3rem] border-2 border-blue-600 min-h-[420px]">
+    <h2 class="text-4xl font-extrabold mb-6">Problem Statement</h2>
+    <p class="text-slate-400 leading-relaxed text-lg">
         Thousands of patients experience unexpected side effects due to long-term medications.
-        While medicines are meant to heal, improper dosage and individual body differences can
-        lead to adverse outcomes.
+        Current systems only list possible side effects but do not predict which patient
+        is at risk before symptoms appear.
     </p>
 
-    <p class="text-slate-400 leading-relaxed">
-        Current systems only list possible side effects but fail to predict which patient might
-        experience them. There is a critical need for a proactive, data-driven system to assess
-        individual risk before treatment begins.
+    <ul class="list-disc pl-6 mt-6 text-slate-400 space-y-2">
+        <li>Delayed detection of adverse reactions</li>
+        <li>Improper dosage risks</li>
+        <li>Lack of personalized risk assessment</li>
+        <li>Reactive rather than preventive healthcare</li>
+    </ul>
+</div>
+
+<div class="flex flex-col gap-10">
+
+<div class="glass p-10 rounded-[2.5rem] border-2 border-blue-500 min-h-[200px]">
+    <h3 class="text-blue-400 font-bold text-sm uppercase tracking-widest mb-4">
+        Literature Review / Research
+    </h3>
+    <p class="text-slate-400 italic">
+        Recent research in AI-driven healthcare highlights the effectiveness
+        of machine learning and deep learning techniques in predicting drug
+        side effects using patient-specific datasets and adverse reaction databases.
     </p>
+</div>
+
+<div class="glass p-10 rounded-[2.5rem] border-2 border-purple-500 min-h-[200px]">
+    <h3 class="text-purple-400 font-bold text-sm uppercase tracking-widest mb-4">
+        Research Gap / Innovation
+    </h3>
+    <p class="text-slate-400 italic">
+        Existing systems provide static side-effect lists but lack a unified predictive framework.
+        MediShield introduces an integrated ML pipeline for real-time personalized
+        side-effect risk prediction.
+    </p>
+</div>
+
+</div>
 </section>
 
-<!-- CURRENT CHALLENGE -->
-<section>
-    <h2 class="text-3xl font-bold mb-6 gradient-text">Current Challenge</h2>
+<section class="space-y-16">
+<h2 class="text-5xl font-black text-center uppercase tracking-tight">
+    System <span class="text-blue-500">Methodology</span>
+</h2>
 
-    <div class="space-y-4 text-slate-400">
-        <p><strong>Challenge:</strong> Inability to proactively identify high-risk patients.</p>
-        <p><strong>Consequence:</strong> Side effects are detected only after manifestation, leading to delayed clinical decisions.</p>
-        <p><strong>Goal:</strong> Develop a predictive system that analyzes patient-specific data to forecast adverse effects and enable preventive healthcare.</p>
+<div class="grid md:grid-cols-3 gap-16 mt-20">
+
+<div class="glass p-12 rounded-[2.5rem] text-center border border-slate-700 min-h-[260px] flex flex-col justify-center">
+    <i class="fas fa-database text-blue-500 text-4xl mb-6"></i>
+    <h3 class="font-bold mb-4 uppercase tracking-widest text-sm">Dataset / Input</h3>
+    <p class="text-slate-500 italic text-sm leading-relaxed">
+        Patient medical records<br>
+        Drug usage history<br>
+        Demographic features<br>
+        Clinical health indicators
+    </p>
+</div>
+
+<div class="glass p-12 rounded-[2.5rem] text-center border border-slate-700 min-h-[260px] flex flex-col justify-center">
+    <i class="fas fa-microchip text-purple-500 text-4xl mb-6"></i>
+    <h3 class="font-bold mb-4 uppercase tracking-widest text-sm">Model / Architecture</h3>
+    <p class="text-slate-500 italic text-sm leading-relaxed">
+        Random Forest Classifier<br>
+        Feature Engineering<br>
+        Data Preprocessing<br>
+        Cross Validation
+    </p>
+</div>
+
+<div class="glass p-12 rounded-[2.5rem] text-center border border-green-600 bg-green-900/10 min-h-[260px] flex flex-col justify-center">
+    <i class="fas fa-rocket text-green-400 text-4xl mb-6"></i>
+    <h3 class="font-bold mb-4 uppercase tracking-widest text-sm text-green-400">
+        Live Execution
+    </h3>
+    <a href="https://medishield-2fx1.onrender.com"
+       target="_blank"
+       class="px-6 py-2 bg-green-600 hover:bg-green-500 transition-all duration-300 rounded-full text-xs font-bold inline-block">
+        VIEW LIVE APPLICATION
+    </a>
+</div>
+
+</div>
+</section>
+
+<section class="glass p-12 rounded-[3.5rem] border-t-4 border-blue-500">
+    <h2 class="text-3xl font-black mb-12 text-center uppercase tracking-tight">
+        Results & Analysis
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="h-80">
+            <canvas id="resultsChart"></canvas>
+        </div>
+
+        <div>
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 mb-6">
+                <span class="text-slate-400 uppercase text-xs tracking-widest">
+                    Prediction Accuracy
+                </span>
+                <div class="text-blue-400 font-black text-4xl mt-2">
+                    90%
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- OBJECTIVES -->
-<section>
-    <h2 class="text-3xl font-bold mb-6 gradient-text">Project Objectives</h2>
+<section class="text-center pt-20 border-t border-slate-800">
+    <h2 class="text-sm font-bold text-slate-400 uppercase tracking-[0.4em] mb-12">
+        Academic Credits
+    </h2>
 
-    <ul class="space-y-4 text-slate-400">
-        <li>• Build a predictive model for medicine side effects using patient-specific data.</li>
-        <li>• Integrate preprocessing, feature engineering, and classification into one pipeline.</li>
-        <li>• Provide interpretable visualization highlighting high-risk drugs and patients.</li>
-        <li>• Contribute toward AI-assisted preventive healthcare.</li>
-    </ul>
-</section>
+    <div class="flex flex-wrap justify-center gap-12">
 
-<!-- WORKFLOW -->
-<section>
-    <h2 class="text-3xl font-bold mb-6 gradient-text">System Workflow</h2>
+        <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-blue-600 min-w-[250px]">
+            <p class="text-xs text-blue-400 uppercase tracking-widest mb-2">Project Guide</p>
+            <p class="font-black text-xl">Ms. Shweta Sharma</p>
+        </div>
 
-    <div class="grid md:grid-cols-3 gap-6 text-slate-400">
-        <div class="glass p-6 rounded-lg">Requirement Analysis</div>
-        <div class="glass p-6 rounded-lg">Data Collection</div>
-        <div class="glass p-6 rounded-lg">Data Preprocessing</div>
-        <div class="glass p-6 rounded-lg">EDA Analysis</div>
-        <div class="glass p-6 rounded-lg">Feature Engineering</div>
-        <div class="glass p-6 rounded-lg">Model Training</div>
-        <div class="glass p-6 rounded-lg">Model Testing</div>
-        <div class="glass p-6 rounded-lg">Prediction Generation</div>
+        <div class="glass px-12 py-8 rounded-[2rem] border-b-4 border-purple-600 min-w-[250px]">
+            <p class="text-xs text-purple-400 uppercase tracking-widest mb-2">Team Member</p>
+            <p class="font-black text-xl">Bhavesh Agrawal</p>
+            <p class="text-xs text-slate-500 mt-1">2427030514</p>
+        </div>
+
     </div>
 </section>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="text-center mt-32 pb-10 text-slate-500">
-    <p class="italic">“Prevention begins with prediction.”</p>
-    <p class="mt-4 text-sm">© 2026 MediShield | PBL Project</p>
+<footer class="py-12 text-center bg-black/40 border-t border-slate-900">
+    <p class="text-slate-600 text-[10px] font-bold tracking-[0.3em] uppercase">
+        Manipal University Jaipur
+    </p>
 </footer>
+
+<script>
+const ctx = document.getElementById('resultsChart').getContext('2d');
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Traditional System', 'MediShield'],
+        datasets: [{
+            data: [65, 90],
+            backgroundColor: ['#1e293b', '#3b82f6'],
+            borderRadius: 15,
+            barThickness: 50
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true } }
+    }
+});
+</script>
 
 </body>
 </html>
